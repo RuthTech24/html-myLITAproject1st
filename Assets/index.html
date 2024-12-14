@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Intro Section with Dropdown Navigation</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="./logo.svg" alt="Snap logo" class="logo">
+      <ul class="nav-links">
+        <li class="dropdown">
+          <a href="#">Features <img src="./icon-arrow-down.svg" alt="Arrow down"></a>
+          <ul class="dropdown-menu">
+            <li><img src="./icon-todo.svg" alt="Todo List icon"> Todo List</li>
+            <li><img src="./icon-calendar.svg" alt="Calendar icon"> Calendar</li>
+            <li><img src="./icon-reminders.svg" alt="Reminders icon"> Reminders</li>
+            <li><img src="./icon-planning.svg" alt="Planning icon"> Planning</li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Company <img src="./icon-arrow-down.svg" alt="Arrow down"></a>
+          <ul class="dropdown-menu">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <div class="auth-links">
+        <a href="#" class="login">Login</a> 
+        <a href="#" class="register">Register</a>
+      </div>
+      <button class="menu-toggle">
+        <img src="./icon-menu.svg" alt="Menu icon">
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        <button class="btn-primary">Learn more</button>
+      </div>
+      <picture>
+        <source media="(max-width: 768px)" srcset="./image-hero-mobile.png">
+        <img src="./image-hero-desktop.png" alt="Hero image" class="hero-image">
+      </picture>
+    </section>
+
+    <section class="clients">
+      <img src="./client-databiz.svg" alt="Databiz logo" class="Databiz">
+      <img src="./client-audiophile.svg" alt="Audiophile logo" class="Audiophile">
+      <img src="./client-meet.svg" alt="Meet logo" class="Meetlogo">
+      <img src="./client-maker.svg" alt="Maker logo" class="Makerlogo">
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

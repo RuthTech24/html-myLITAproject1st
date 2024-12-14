@@ -1,0 +1,175 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+    line-height: 1.6;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color:rgb(224, 195, 26)
+  }
+  
+  .logo {
+    height: 2rem;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    
+  }
+  
+  .nav-links li {
+    position: relative;
+    
+  }
+  
+  .dropdown-menu {
+    display:none;
+    position: relative;
+    background: rgb(233, 234, 236);
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    top: 0.7rem;
+    left: 0;
+    color: hsl(0, 0%, 8%);
+  }
+  
+  .nav-links li:hover .dropdown-menu {
+    display: block;
+    
+  }
+  
+  .auth-links a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: hsl(0, 0%, 8%);
+  }
+  
+  .auth-links .register {
+    border: 1px solid hsl(0, 0%, 13%);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 4.8rem;
+    margin-bottom: 1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: normal;
+  }
+  
+  .hero-text p {
+    margin-bottom: 1.5rem;
+    color: hsl(0, 0%, 55%);
+  }
+  
+  .hero-text .btn-primary {
+    background-color: hsl(0, 1%, 18%);
+    color: rgb(247, 217, 48);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size:large;
+  }
+  
+  .hero-image {
+    width: 50%;
+    max-width: 800px;
+  }
+  
+  .clients {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+ 
+  .clients img {
+    max-width: 100px;
+    height: auto;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+    align-self: flex-start; /* Ensures the images align to the start of the flex container */
+    margin-bottom: 100px;
+    margin-left: 0; /* Removes any default margin that may push the images inward */
+  }
+  
+ .Databiz {
+     margin-right: auto;
+  }
+
+  .Audiophile {
+    margin-right: 900px;
+ }
+
+
+
+  .clients img:hover {
+    opacity: 2;
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-image {
+      width: 100%;
+      
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  
+    .menu-toggle {
+      display: block;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  
+    .auth-links {
+      display: none;
+     
+    }
+
+}
+  
